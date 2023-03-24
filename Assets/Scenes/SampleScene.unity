@@ -712,6 +712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftFripper
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8573f8bc019ad464ca023d4a04cd0d1a, type: 3}
+      propertyPath: m_TagString
+      value: LeftFripperTag
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8573f8bc019ad464ca023d4a04cd0d1a, type: 3}
 --- !u!1 &961763707 stripped
@@ -926,6 +930,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d8c038e36e6af9145939481c28c28ac4, type: 3}
       propertyPath: m_Name
       value: RightFripper
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d8c038e36e6af9145939481c28c28ac4, type: 3}
+      propertyPath: m_TagString
+      value: RightFripperTag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8c038e36e6af9145939481c28c28ac4, type: 3}
