@@ -13,33 +13,32 @@ public class Score : MonoBehaviour
     void Start()
     {
         this.scoreText = GameObject.Find("ScoreText");
-        pinbollscore = 0;
-        SetScore();
+        SetScore(0);
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("SmallStarTag"))
         {
-            pinbollscore += 10;
+            SetScore(10);
         }
         else if (other.gameObject.CompareTag("LargeStarTag"))
         {
-            pinbollscore += 20;
+            SetScore(20);
         }
         else if (other.gameObject.CompareTag("SmallCloudTag"))
         {
-            pinbollscore += 50;
+            SetScore(50);
         }
         else if (other.gameObject.CompareTag("LargeCloudTag"))
         {
-            pinbollscore += 100;
-        }
-        SetScore();
+            SetScore(100);
+        }  
     }
 
-    private void SetScore()
+    private void SetScore(int num)
     {
+        pinbollscore += num;
         this.scoreText.GetComponent<Text>().text = string.Format("Score:{0}", pinbollscore);
     }
 
